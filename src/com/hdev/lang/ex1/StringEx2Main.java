@@ -26,12 +26,14 @@ public class StringEx2Main {
 			System.out.println("이미지다");
 		}else if(name.equalsIgnoreCase("gif")) {
 			System.out.println("이미지다");
+		}else if(name.equalsIgnoreCase("jiff")) {
+			System.out.println("이미지다");
 		}else {
 			System.out.println("이미지가 아니다");
 		}
 		
 		//--------------------------------
-		String [] files = {"jpg", "gif", "png", "jpeg"};
+		String [] files = {"jpg", "gif", "png", "jpeg", "jiff"};
 		
 		String result ="이미지 파일이 아니다";
 		for(int i=0;i<files.length;i++) {
