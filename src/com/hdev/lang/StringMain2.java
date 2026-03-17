@@ -38,6 +38,9 @@ public class StringMain2 {
 		
 		System.out.println(teams[1].trim().equals("기아"));
 		
+		String s = " a b c ";
+				s = s.replace(" ", "");
+		
 		
 	}
 
