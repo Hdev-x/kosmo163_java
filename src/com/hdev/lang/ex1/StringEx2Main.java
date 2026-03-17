@@ -19,7 +19,7 @@ public class StringEx2Main {
 		int idx = fileName.lastIndexOf(".");
 		System.out.println(idx);
 		//2. .이후의 문자열 꺼내오기
-		String name = fileName.substring(idx+1);
+		String name = fileName.substring(idx+1); //확장자만 꺼내오기
 		System.out.println(name);
 		//3. 이미지 파일 체크
 		if(name.equalsIgnoreCase("png")) {
