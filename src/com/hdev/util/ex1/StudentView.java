@@ -1,11 +1,13 @@
 package com.hdev.util.ex1;
 
+import java.util.ArrayList;
+
 public class StudentView {
 
 	
-	public void view(StudentDTO [] studentDTOs) {
-		for(int i=0; i < studentDTOs.length;i++) {
-			this.view(studentDTOs[i]);
+	public void view(ArrayList<StudentDTO> DTOs) {
+		for(int i=0; i < DTOs.size();i++) {
+			this.view(DTOs.get(i));
 			
 			
 		}
@@ -17,7 +19,7 @@ public class StudentView {
 		System.out.println("국어 : "+studentDTO.getKor());
 		System.out.println("영어 : "+studentDTO.getEng());
 		System.out.println("수학 : "+studentDTO.getMath());
-		
+		System.out.println("-------------------");
 	}
 	
 }
