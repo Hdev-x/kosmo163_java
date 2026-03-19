@@ -20,7 +20,9 @@ public class StudentController {
 			System.out.println("2.학생정보출력");
 			System.out.println("3.학생정보검색");
 			System.out.println("4.학생정보추가");
-			System.out.println("5.종료");
+			System.out.println("5.학생정보삭제");
+			System.out.println("6.학생정보백업");
+			System.out.println("7.종료");
 			System.out.println("======================");
 			int choice = sc.nextInt();
 
@@ -44,6 +46,10 @@ public class StudentController {
 			} else if (choice == 4) {
 				ss.add(ar);
 			} else if (choice == 5) {
+				ss.delete(ar);
+			} else if (choice == 6) {
+				ss.backup(ar);
+			} else if (choice == 7) {
 				System.out.println("프로그램을 종료합니다");
 				flag = false;
 				break;
